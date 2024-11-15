@@ -9,6 +9,7 @@ body, html {
   top: 0; /* Positions it at the very top */
   left: 0;
   width: 100%; /* Spans the full width of the viewport */
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,6 +17,7 @@ body, html {
   background-color: #f0f0f0; /* Nav background color */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for separation */
   z-index: 1000; /* Ensures the nav stays above other elements */
+  
 }
 
 .logo img {
