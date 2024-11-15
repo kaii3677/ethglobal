@@ -6,25 +6,7 @@ import './Mainpage.css';
 const Mainpage = () => {
   return (
     <div>
-      <nav className="main-nav">
-        <div className='logo'>
-            <img src={logo} alt="Logo" />
-          </div>
-                <div className="main-nav-links">
-                  <Link to="/donation">Donation</Link>
-                  <Link to="/financial">Financial Aids</Link>
-                  <Link to="/vote">Voting</Link>
-
-                </div>
-
-                <div className="wallet">
-                
-                    <p>ur wallet address</p>
-                
-                </div>
-
-        
-      </nav>
+      
 
       <div className="main-banner">
         <h1>Government Crowdfunding Platform</h1>
