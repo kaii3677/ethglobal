@@ -2,12 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Donation.css";
 
+
 const Donation = () => {
   const gridItems = [1, 2, 3, 4];
 
   return (
     <section className='donation-container'>
       <div className='donation-banner' />
+
       <h2 className='donation-title'>Contribute to the Society</h2>
       <div className='donation-gridContainer'>
         <div className='donation-grid'>

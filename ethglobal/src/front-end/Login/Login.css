@@ -71,13 +71,6 @@ body, html {
 }
 
 
-
-
-
-
-
-
-
 \\image
 .image-container {
   width: 300px;        
@@ -106,6 +99,18 @@ body, html {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column; /* Ensures content stacks vertically */
+  align-items: center; /* Centers content horizontally */  
+
+}
+
+.feature-image {
+  width: 100px; /* Set the desired width */
+  height: 100px; /* Set the desired height */
+  object-fit: cover; /* Ensures images fit well within the dimensions */
+  border-radius: 8px; /* Optional: Adds rounded corners to images */
+  margin-bottom: 1rem; /* Space between the image and the text */
 }
 
 .login-button-container {
@@ -117,28 +122,28 @@ body, html {
 
 .login-button {
   display: inline-block; /* Makes the button size to fit content */
-  padding: 20px 40px; /* Adds space inside the button */
+  padding: 1px 130px; /* Adds space inside the button */
   background-color: #162F2F; /* Button background color */
   color: #fff; /* Text color */
-  font-size: 20px; /* Adjust text size */
+  font-size: 30px; /* Adjust text size */
   font-weight: bold; /* Makes the text bold */
   border: none; /* Removes any border */
-  border-radius: 30px; /* Creates a rounded/oval shape */
+  border-radius: 100px; /* Creates a rounded/oval shape */
   text-align: center; /* Centers the text */
   cursor: pointer; /* Changes the cursor to a pointer on hover */
   transition: background-color 0.3s, transform 0.2s; /* Adds smooth hover effect */
-  margin-right: 30px;
+  margin-right: 50px;
   justify-content: center;
 }
 
 .login-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #47875b; /* Darker shade on hover */
   transform: scale(1.05); /* Slightly enlarges on hover */
 }
 
 
 .login-button p{
   color: #fff; /* Text color */
-  font-size: 16px; /* Adjust text size */
+  font-size: 30px; /* Adjust text size */
   font-weight: bold; 
 }
