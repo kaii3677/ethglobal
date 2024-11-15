@@ -59,8 +59,9 @@ body, html {
   position: flex; /* Keeps the image fixed in place */
   top: 0; /* Aligns the image with the top of the page */
   left: 0; /* Aligns the image with the left of the page */
-  width: 100%; /* Makes the image take up the full width of the screen */
+  width: 124.5%; /* Makes the image take up the full width of the screen */
   height: 600px; /* Makes the image take up the full height of the screen */
+  margin-left: -170px;
   
   background-image: url('../../assets/LoginB.png'); /* Path to your banner image */
   background-size: cover;  /* Ensures the image covers the entire container */
