@@ -2,9 +2,10 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  justify-content: center;
 }
 
-.nav {
+.main-nav {
   position: fixed; /* Ensures the nav stays fixed at the top */
   top: 0; /* Positions it at the very top */
   left: 0;
@@ -22,7 +23,7 @@ body, html {
   height: 150px; /* Adjust the logo size */
 }
 
-.nav-links {
+.main-nav-links {
   display: flex;
   gap: 1rem;
   padding-right: 20px;
@@ -30,33 +31,33 @@ body, html {
 }
 
 
-.nav-links a {
+.main-nav-links a {
   text-decoration: none;
   color: #333;
   font-size: 20px;
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.main-nav-links a:hover {
   color: #007bff; /* Hover effect color */
 }
 
-.banner {
+.main-banner {
   margin-top: 80px; /* Adds spacing below the fixed nav bar */
   text-align: center;
   padding: 2rem 1rem;
 }
 
-.features-container {
+.main-features-container {
   padding: 1rem;
   margin-top: 2rem;
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  flex-direction: column; /* Changes layout to vertical */
+  gap: 1.5rem; /* Adds space between the features */
+  
 }
 
-.feature {
-  flex: 1;
+.main-feature {
   text-align: center;
   padding: 1rem;
   background-color: #f9f9f9;
@@ -64,7 +65,7 @@ body, html {
   border-radius: 8px;
 }
 
-.login-button {
+.wallet {
   display: inline-block; /* Makes the button size to fit content */
   padding: 10px 20px; /* Adds space inside the button */
   background-color: #007bff; /* Button background color */
@@ -77,22 +78,22 @@ body, html {
   margin-right: 30px; /* Align the button to the right */
 }
 
-.login-button p {
+.wallet p {
   color: #fff; /* Text color */
   font-size: 16px; /* Adjust text size */
   font-weight: bold; /* Makes the text bold */
 }
 
 /* Remove hover and cursor effects */
-.login-button:hover {
+.wallet:hover {
   background-color: #007bff; /* No hover effect */
   transform: none; /* No scaling effect */
 }
 
-.login-button:active {
+.wallet:active {
   background-color: #007bff; /* No active effect */
 }
 
-.login-button {
+.wallet{
   cursor: default; /* Keeps the default cursor, no pointer on hover */
 }
