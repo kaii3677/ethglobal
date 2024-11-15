@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Ensure Toastify styling is imported
 import Login from "./front-end/Login/Login";
 import Mainpage from "./front-end/Mainpage/Mainpage";
+import Donation from "./front-end/Donation/Donation"
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
 
           {/* Main Page Route */}
           <Route path="/mainpage" element={<Mainpage />} />
+          <Route path="/donation" element={<Donation />} />
         </Routes>
       </div>
     </BrowserRouter>

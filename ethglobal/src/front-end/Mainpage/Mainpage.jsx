@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import logo from '../../assets/logo.png'
 import './Mainpage.css';
 
 const Mainpage = () => {
@@ -8,13 +8,19 @@ const Mainpage = () => {
     <div>
       <nav className="nav">
         <div className='logo'>
-            <div className="nav-links">
-            <Link to="/home">Home</Link>
-            <Link to="/donation">Donation</Link>
-            <Link to="/financial-aid">Financial Aid</Link>
-            <Link to="/voting">Voting</Link>
-            </div>
-        </div>
+            <img src={logo} alt="Logo" />
+          </div>
+                <div className="nav-links">
+                  <Link to="/donation">Donation</Link>
+                </div>
+
+                <div className="login-button">
+                
+                    <p>ur wallet address</p>
+                
+                </div>
+
+        
       </nav>
 
       <div className="banner">

@@ -64,6 +64,13 @@ body, html {
   border-radius: 8px;
 }
 
+.login-button-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers the button vertically (optional if you want vertical centering) */
+  width: 100%; /* Ensures it takes the full width */
+}
+
 .login-button {
   display: inline-block; /* Makes the button size to fit content */
   padding: 10px 20px; /* Adds space inside the button */
@@ -77,6 +84,7 @@ body, html {
   cursor: pointer; /* Changes the cursor to a pointer on hover */
   transition: background-color 0.3s, transform 0.2s; /* Adds smooth hover effect */
   margin-right: 30px;
+  justify-content: center;
 }
 
 .login-button:hover {

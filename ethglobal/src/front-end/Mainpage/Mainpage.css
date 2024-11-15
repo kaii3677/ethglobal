@@ -1,42 +1,98 @@
-/* components/HomeScreen.css */
-.home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f4f8;
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
-  
-  .home-header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .home-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-  }
-  
-  .home-header p {
-    font-size: 1.2rem;
-    color: #666;
-  }
-  
-  .home-content .home-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .home-content .home-button:hover {
-    background-color: #0056b3;
-  }
-  
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  position: fixed; /* Ensures the nav stays fixed at the top */
+  top: 0; /* Positions it at the very top */
+  left: 0;
+  width: 100%; /* Spans the full width of the viewport */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  background-color: #f0f0f0; /* Nav background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for separation */
+  z-index: 1000; /* Ensures the nav stays above other elements */
+}
+
+.logo img {
+  height: 150px; /* Adjust the logo size */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  padding-right: 20px;
+  margin-left: auto; /* This aligns the nav links to the right */
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Hover effect color */
+}
+
+.banner {
+  margin-top: 80px; /* Adds spacing below the fixed nav bar */
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.features-container {
+  padding: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.login-button {
+  display: inline-block; /* Makes the button size to fit content */
+  padding: 10px 20px; /* Adds space inside the button */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  font-size: 16px; /* Adjust text size */
+  font-weight: bold; /* Makes the text bold */
+  border: none; /* Removes any border */
+  border-radius: 30px; /* Creates a rounded/oval shape */
+  text-align: center; /* Centers the text */
+  margin-right: 30px; /* Align the button to the right */
+}
+
+.login-button p {
+  color: #fff; /* Text color */
+  font-size: 16px; /* Adjust text size */
+  font-weight: bold; /* Makes the text bold */
+}
+
+/* Remove hover and cursor effects */
+.login-button:hover {
+  background-color: #007bff; /* No hover effect */
+  transform: none; /* No scaling effect */
+}
+
+.login-button:active {
+  background-color: #007bff; /* No active effect */
+}
+
+.login-button {
+  cursor: default; /* Keeps the default cursor, no pointer on hover */
+}
