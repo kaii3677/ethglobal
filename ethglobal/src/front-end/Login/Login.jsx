@@ -1,6 +1,7 @@
   import React from 'react';
   import { Link } from 'react-router-dom';
-  import logo from '../../assets/logo.png'
+  import logo from '../../assets/logo.png';
+  import bannerImage from '../../assets/login banner 2.png';
 
   import './Login.css';
 
@@ -12,8 +13,7 @@
               <img src={logo} alt="Logo" />
             </div>
                   <div className="nav-links">
-                    
-                    
+
                   </div>
                   
 
@@ -21,8 +21,7 @@
         </nav>
 
         <div className="banner">
-          <h1>Welcome to Fundify</h1>
-          <p>Add description</p>
+                  <img src={bannerImage} alt="Login Banner" className="banner-image" />
         </div>
 
         <div className="login-button-container">

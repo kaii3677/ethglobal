@@ -45,7 +45,23 @@ body, html {
   margin-top: 80px; /* Adds spacing below the fixed nav bar */
   text-align: center;
   padding: 2rem 1rem;
+  
 }
+
+.banner-image{
+  width: 100%; /* Adjusts to fit the container */
+  max-width: 1000px; /* Limits the size */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Ensures proper layout */
+  margin: 0 auto; /* Centers the image */
+}
+
+
+
+
+
+
+
 
 .features-container {
   padding: 1rem;
@@ -73,8 +89,8 @@ body, html {
 
 .login-button {
   display: inline-block; /* Makes the button size to fit content */
-  padding: 10px 20px; /* Adds space inside the button */
-  background-color: #007bff; /* Button background color */
+  padding: 20px 40px; /* Adds space inside the button */
+  background-color: #000000; /* Button background color */
   color: #fff; /* Text color */
   font-size: 16px; /* Adjust text size */
   font-weight: bold; /* Makes the text bold */
