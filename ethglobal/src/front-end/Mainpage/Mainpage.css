@@ -1,0 +1,42 @@
+/* components/HomeScreen.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .home-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .home-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .home-header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .home-content .home-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-content .home-button:hover {
+    background-color: #0056b3;
+  }
+  
