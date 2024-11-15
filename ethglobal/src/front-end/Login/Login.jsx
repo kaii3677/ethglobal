@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.png'
 
 import './Login.css';
 
@@ -8,17 +9,24 @@ const Login = () => {
     <div>
       <nav className="nav">
         <div className='logo'>
-            <div className="nav-links">
-            <Link to="/home">Home</Link>
-            <Link to="/donation">Donation</Link>
-            <Link to="/financial-aid">Financial Aid</Link>
-            <Link to="/voting">Voting</Link>
-            </div>
-        </div>
+            <img src={logo} alt="Logo" />
+          </div>
+                <div className="nav-links">
+                  
+                  
+                </div>
+                <div className="login-button">
+                <Link to="/mainpage">
+                    <p>Connect Wallet</p>
+                </Link>
+                </div>
+
+        
       </nav>
 
       <div className="banner">
-        <h1>Government Crowdfunding Platform</h1>
+        <h1>Welcome to Fundify</h1>
+        <p>Add description</p>
       </div>
 
       <div className="features-container">

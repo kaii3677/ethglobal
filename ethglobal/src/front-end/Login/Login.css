@@ -1,66 +1,92 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #f0f0f0;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  
-  .connect-wallet {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  .connect-wallet:hover {
-    background-color: #45a049;
-  }
-  
-  .banner {
-    height: 300px;
-    background-color: #3498db;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .features-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-  }
-  
-  .feature {
-    width: 30%;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .feature h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .feature p {
-    color: #555;
-  }
-  
+  position: fixed; /* Ensures the nav stays fixed at the top */
+  top: 0; /* Positions it at the very top */
+  left: 0;
+  width: 100%; /* Spans the full width of the viewport */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  background-color: #f0f0f0; /* Nav background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for separation */
+  z-index: 1000; /* Ensures the nav stays above other elements */
+}
+
+.logo img {
+  height: 150px; /* Adjust the logo size */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  padding-right: 20px;
+  margin-left: auto; /* This aligns the nav links to the right */
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Hover effect color */
+}
+
+.banner {
+  margin-top: 80px; /* Adds spacing below the fixed nav bar */
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.features-container {
+  padding: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.login-button {
+  display: inline-block; /* Makes the button size to fit content */
+  padding: 10px 20px; /* Adds space inside the button */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  font-size: 16px; /* Adjust text size */
+  font-weight: bold; /* Makes the text bold */
+  border: none; /* Removes any border */
+  border-radius: 30px; /* Creates a rounded/oval shape */
+  text-align: center; /* Centers the text */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Adds smooth hover effect */
+  margin-right: 30px;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+
+.login-button p{
+  color: #fff; /* Text color */
+  font-size: 16px; /* Adjust text size */
+  font-weight: bold; 
+}
