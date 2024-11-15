@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import bannerImage from '../../assets/LoginB.png';
+import donateImage from '../../assets/donate.jpg';
+import FinancialAidsImage from '../../assets/financial.jpg';
+import votingImage from '../../assets/voting.png';
+
 
 import './Login.css';
 
@@ -35,14 +39,17 @@ const Login = () => {
       {/* Features Section */}
       <div id="features-container" className="features-container">
         <div className="feature">
+        <img src={donateImage} alt="Donation" className="feature-image" />
           <h2>Donation</h2>
           <p>Support government initiatives through secure and transparent donations.</p>
         </div>
         <div className="feature">
+        <img src={FinancialAidsImage} alt="FinancialAids" className="feature-image" />
           <h2>Financial Aid</h2>
           <p>Apply for and receive financial assistance for various programs.</p>
         </div>
         <div className="feature">
+        <img src={votingImage} alt="Voting" className="feature-image" />
           <h2>Voting</h2>
           <p>Participate in decision-making processes through secure online voting.</p>
         </div>
