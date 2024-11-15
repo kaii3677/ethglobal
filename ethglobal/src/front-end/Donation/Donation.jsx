@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Donation.css"; // Changed from './Donation.css' to module import
+import "./Donation.css";
 
 const Donation = () => {
   const gridItems = [1, 2, 3, 4];
@@ -12,7 +12,7 @@ const Donation = () => {
       <div className='donation-gridContainer'>
         <div className='donation-grid'>
           {gridItems.map((item, index) => (
-            <GridItem key={index} />
+            <GridItem key={index} index={index} />
           ))}
         </div>
       </div>
@@ -30,10 +30,20 @@ const Donation = () => {
   );
 };
 
-const GridItem = () => (
-  <div className='donation-gridItem'>
-    <div className='donation-gridImage' />
-  </div>
-);
+const GridItem = ({ index }) => {
+  if (index === 0) {
+    // Make the first grid item clickable with a link
+    return (
+      <Link to='/donationdetails' className='donation-gridItem'>
+        <div className='donation-gridImage' />
+      </Link>
+    );
+  }
+  return (
+    <div className='donation-gridItem'>
+      <div className='donation-gridImage' />
+    </div>
+  );
+};
 
 export default Donation;

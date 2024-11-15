@@ -1,0 +1,237 @@
+.dd-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 50px 80px 205px;
+  }
+  
+  @media (max-width: 991px) {
+    .dd-container {
+      padding: 10px 20px;
+    }
+  }
+  
+  .dd-content {
+    display: flex;
+    margin-left: 19px;
+    width: 100%;
+    max-width: 2062px;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 991px) {
+    .dd-content {
+      max-width: 100%;
+    }
+  }
+  
+  .dd-projectInfo {
+    gap: 20px;
+    display: flex;
+  }
+  
+  @media (max-width: 991px) {
+    .dd-projectInfo {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .dd-imageColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 34%;
+    margin-left: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .dd-imageColumn {
+      width: 100%;
+    }
+  }
+  
+  .dd-projectImage {
+    border-radius: 48px;
+    background-color: #d9d9d9;
+    display: flex;
+    width: 642px;
+    max-width: 100%;
+    height: 405px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  
+  @media (max-width: 991px) {
+    .dd-projectImage {
+      margin-top: 40px;
+    }
+  }
+  
+  .dd-detailsColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 66%;
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .dd-detailsColumn {
+      width: 100%;
+    }
+  }
+  
+  .dd-projectDetails {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-self: stretch;
+    font-family: Inter, sans-serif;
+    color: #000;
+    font-weight: 500;
+    margin: auto 0;
+  }
+  
+  @media (max-width: 991px) {
+    .dd-projectDetails {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .dd-projectTitle {
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    align-self: start;
+  }
+  
+  @media (max-width: 991px) {
+    .dd-projectTitle {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+  
+  .dd-infoRow {
+    display: flex;
+    justify-content: space-between; /* Space between the two items */
+    align-items: center; /* Align items vertically */
+    margin-top: 20px; /* Adjust spacing as needed */
+  }
+  
+  .dd-donationDeadline {
+    font-size: 23px;
+    text-align: left; /* Align text to the left for consistency */
+    margin: 0; /* Reset any margins */
+  }
+  
+  .dd-donatorInfo {
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+    gap: 10px; /* Add spacing between icon and count */
+    font-size: 23px; /* Ensure font sizes match */
+  }
+  
+  .dd-donatorIcon {
+    background-color: #d9d9d9;
+    width: 41px;
+    height: 42px;
+    border-radius: 50%; /* Optional: make the icon circular */
+  }
+
+  
+  .dd-donatorCount {
+    flex-basis: auto;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+  
+  .dd-projectDescription {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 39px;
+    margin: 29px 68px 0 0;
+    text-align: justify;
+  }
+  
+  @media (max-width: 991px) {
+    .dd-projectDescription {
+      max-width: 100%;
+      margin-right: 10px;
+    }
+  }
+  
+  .dd-donateButton {
+    border-radius: 100px;
+    background-color: #000;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+    align-self: center;
+    margin-top: 92px;
+    width: 589px;
+    height: 100px;
+    max-width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 24px 70px 82px;
+    font: 700 46px Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .dd-donateButton {
+      max-width: 100%;
+      font-size: 40px;
+      margin-top: 40px;
+      padding: 0 20px 110px;
+    }
+  }
+  
+  .dd-exploreButton {
+    border-radius: 100px;
+    background-color: #fff;
+    align-self: start;
+    height: 100px;
+    width: auto;
+    margin-top: 83px;
+    color: #000;
+    text-align: center;
+    padding: 23px 30px 33px;
+    font: 500 28px Inter, sans-serif;
+    border: 6px solid #000;
+  }
+  
+  @media (max-width: 991px) {
+    .dd-exploreButton {
+      max-width: 100%;
+      font-size: 40px;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
+
+  .dd-buttonRow {
+    display: flex;
+    justify-content: space-between; /* Space between the two buttons */
+    align-items: center; /* Vertically align the buttons */
+    margin-top: 20px; /* Add spacing above the row */
+    width: 100%; /* Ensure it spans the container */
+  }
+  
+  .dd-backHomeButton {
+    border-radius: 100px;
+    background-color: #fff;
+    align-self: start;
+    height: 100px;
+    width: auto;
+    margin-top: 83px;
+    color: #000;
+    text-align: center;
+    padding: 23px 30px 33px;
+    font: 500 28px Inter, sans-serif;
+    border: 6px solid #000;
+  }
+  

@@ -9,6 +9,8 @@ import Vote from "./front-end/Vote/Vote";
 import Financial from "./front-end/Financial/Financial";
 import Navbar from "./front-end/Navbar/Navbar"; // Import Navbar
 import FinancialDetails from "./front-end/FinancialDetails/FinancialDetails";
+import DonationDetails from "./front-end/DonationDetails/DonationDetails";
+
 
 // Layout component to conditionally render the Navbar
 const Layout = () => {
@@ -39,6 +41,7 @@ const App = () => {
           <Route path="/financial" element={<Financial />} />
           <Route path="/vote" element={<Vote />} />
           <Route path="/financialdetails" element={<FinancialDetails />} />
+          <Route path="/donationdetails" element={<DonationDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>
