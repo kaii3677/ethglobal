@@ -1,7 +1,7 @@
   import React from 'react';
   import { Link } from 'react-router-dom';
   import logo from '../../assets/logo.png';
-  import bannerImage from '../../assets/login banner 2.png';
+  import bannerImage from '../../assets/LoginB.png';
 
   import './Login.css';
 
@@ -21,7 +21,8 @@
         </nav>
 
         <div className="banner">
-                  <img src={bannerImage} alt="Login Banner" className="banner-image" />
+        
+          <img src={bannerImage} alt="Login Banner" className="banner-image" />
         </div>
 
         <div className="login-button-container">

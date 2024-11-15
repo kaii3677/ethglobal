@@ -46,18 +46,25 @@ body, html {
 }
 
 .banner {
-  margin-top: 80px; /* Adds spacing below the fixed nav bar */
+  
   text-align: center;
-  padding: 2rem 1rem;
+  
   
 }
 
-.banner-image{
-  width: 100%; /* Adjusts to fit the container */
-  max-width: 1000px; /* Limits the size */
-  height: auto; /* Maintains aspect ratio */
-  display: block; /* Ensures proper layout */
-  margin: 0 auto; /* Centers the image */
+.banner-image {
+  position: flex; /* Keeps the image fixed in place */
+  top: 0; /* Aligns the image with the top of the page */
+  left: 0; /* Aligns the image with the left of the page */
+  width: 100%; /* Makes the image take up the full width of the screen */
+  height: 600px; /* Makes the image take up the full height of the screen */
+  
+  background-image: url('../../assets/LoginB.png'); /* Path to your banner image */
+  background-size: cover;  /* Ensures the image covers the entire container */
+  background-position: center center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  
+  z-index: -1; /* Puts the image behind other content */
 }
 
 
@@ -94,9 +101,9 @@ body, html {
 .login-button {
   display: inline-block; /* Makes the button size to fit content */
   padding: 20px 40px; /* Adds space inside the button */
-  background-color: #000000; /* Button background color */
+  background-color: #162F2F; /* Button background color */
   color: #fff; /* Text color */
-  font-size: 16px; /* Adjust text size */
+  font-size: 20px; /* Adjust text size */
   font-weight: bold; /* Makes the text bold */
   border: none; /* Removes any border */
   border-radius: 30px; /* Creates a rounded/oval shape */
