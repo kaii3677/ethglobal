@@ -14,11 +14,22 @@ body, html {
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  background-color: #f0f0f0; /* Nav background color */
+  background-color: rgba(240, 240, 240, 0.2); /* Set opacity to 0.2 for background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for separation */
   z-index: 1000; /* Ensures the nav stays above other elements */
-  
 }
+
+.nav-links a {
+  text-decoration: none;
+  color: #b6b6b6; /* Ensures the text is visible */
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #023915; /* Hover effect color */
+}
+
 
 .logo img {
   width: 150px; /* Set a fixed width */
@@ -33,19 +44,10 @@ body, html {
   gap: 1rem;
   padding-right: 20px;
   margin-left: auto; /* This aligns the nav links to the right */
+  
 }
 
 
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-size: 20px;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #007bff; /* Hover effect color */
-}
 
 .banner {
   
@@ -60,9 +62,9 @@ body, html {
   top: 0; /* Aligns the image with the top of the page */
   left: 0; /* Aligns the image with the left of the page */
   width: 124.5%; /* Makes the image take up the full width of the screen */
-  height: 600px; /* Makes the image take up the full height of the screen */
+  height: 700px; /* Makes the image take up the full height of the screen */
   margin-left: -170px;
-  
+  margin-top: -150px;
   background-image: url('../../assets/LoginB.png'); /* Path to your banner image */
   background-size: cover;  /* Ensures the image covers the entire container */
   background-position: center center;  /* Centers the image */
